@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SORTEO IPHONE 13 PRO!!</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Estilos para la imagen */
+  #imagen-arriba-derecha {
+    position: absolute;
+    top: 10px; /* Ajusta la posición desde la parte superior */
+    right: 10px; /* Ajusta la posición desde el borde derecho */
+    max-width: 600px; /* Tamaño máximo de la imagen (tres veces más grande) */
+    height: auto; /* Altura automática según el ancho */
+    z-index: 999; /* Para asegurarse de que esté sobre otros elementos */
+  }
+</style>
+</head>
+<body>
+<img id="imagen-arriba-derecha" src="logo.png" alt="logo"> <!-- Aquí agregamos la imagen "logo.png" -->
+<button id="btn-generar">Máquina de la Suerte</button>
+<button id="btn-sorteo">¿Quién será el ganador?</button>
+<h1>SORTEO IPHONE 13 PRO!!</h1>
+<div id="lista">
+  <table>
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Nombre</th>
+        <th>Pagado</th>
+        <th>Teléfono</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="lista-body">
+      <!-- Aquí se generará dinámicamente la lista -->
+    </tbody>
+  </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
